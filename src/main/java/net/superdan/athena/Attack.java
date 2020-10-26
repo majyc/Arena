@@ -107,6 +107,21 @@ public class Attack {
      */
     public String toString() {
         return (rate == 1 ? "" : rate + " ")
+                + (name == null ? "net.superdan.athena.Attack" : name) + " "
+                + Dice.formatBonus(bonus)
+                + " (" + damage + ")";
+    }
+
+
+    /**
+     * Main test function.
+     */
+    public static void main(String[] args) {
+        Attack atk = new Attack(2, 1);
+        System.out.println(atk);
+        atk = new Attack("Claw", 2, 6, new Dice(1, 6));
+        System.out.println(atk);
+    }
                 + (name == null ? "Attack" : name) + " "
                 + Dice.formatBonus(bonus)
                 + " (" + damage + ")";

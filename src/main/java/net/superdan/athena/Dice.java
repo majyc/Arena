@@ -322,7 +322,7 @@ public class Dice {
 					+ (double) count[i]/numRolls);
 		}
 		System.out.println();
-		
+
 	}
 
 	static class NonRandom extends Random {

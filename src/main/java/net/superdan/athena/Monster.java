@@ -485,7 +485,8 @@ public class Monster {
 
 		// Berserker bonus (NPC)
 		if (hasSpecial(SpecialType.Berserking) 
-				|| hasCondition(SpecialType.Berserking)) {
+				|| hasCondition(SpecialType.Berserking)
+				|| hasFeat(Feat.Berserking)) {
 			modifier += 2;
 		}
 

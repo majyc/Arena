@@ -97,6 +97,7 @@ public class PersonalityTraits {
 			case Lawful -> value == +1;
 			case Neutral -> value == 0;
 			case Chaotic -> value == -1;
+			default -> false;
 		};
 	}
 
@@ -129,11 +130,12 @@ public class PersonalityTraits {
 	*/
 	public static void main (String[] args) throws IOException {
 		Dice.initialize();
+		final int NUM_TRAITS = 5;
 		PersonalityTraits pt = new PersonalityTraits();
-		pt.printMultiTraits(Alignment.Lawful);
-		pt.printMultiTraits(Alignment.Neutral);
-		pt.printMultiTraits(Alignment.Chaotic);
-		pt.printMultiTraits(null);
+		pt.printMultiTraits(Alignment.Lawful,  NUM_TRAITS);
+		pt.printMultiTraits(Alignment.Neutral, NUM_TRAITS);
+		pt.printMultiTraits(Alignment.Chaotic, NUM_TRAITS);
+		pt.printMultiTraits(null, NUM_TRAITS);
 	}
 }
 
