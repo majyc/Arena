@@ -116,7 +116,6 @@ public enum Ability {
 	/**
 	 *  Main test function.
 	 */
-	 * /
 	public static void main (String[] args) {
 		System.out.println("Score\tBonus");
 		System.out.println("-----\t-----");

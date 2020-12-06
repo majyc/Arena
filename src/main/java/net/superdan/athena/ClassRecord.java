@@ -324,7 +324,7 @@ public class ClassRecord {
 	void addAllSpells() {
 		if (classType.usesSpells()) {
 			spellsKnown = new ArrayList<>();
-			SpellsTable table = SpellsTable.getInstance();
+			SpellsTable.getInstance(); // instantiate singleton
 			SpellsUsable usable = SpellsUsable.getInstance();
 			for (int power = 1; power <= usable.getMaxSpellLevel(); power++) {
 				spellsKnown.add(new ArrayList<>());
