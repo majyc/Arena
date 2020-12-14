@@ -107,7 +107,7 @@ public class Attack {
      */
     public String toString() {
         return (rate == 1 ? "" : rate + " ")
-                + (name == null ? "net.superdan.athena.Attack" : name) + " "
+                + (name == null ? "Attack" : name) + " "
                 + Dice.formatBonus(bonus)
                 + " (" + damage + ")";
     }
