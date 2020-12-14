@@ -340,7 +340,5 @@ public class Dice {
 		@Override
 		public int nextInt(int sides) {
 			return force - 1; // the result of nextInt(sides) will have 1 added to it, so subtract 1
-		}
 	}
-
 }
