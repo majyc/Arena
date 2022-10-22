@@ -27,9 +27,6 @@ public class NPCGenerator implements Callable<Integer> {
 	/** Percent chance for magic per level. */
 	static final int PCT_MAGIC_PER_LEVEL = 15;
 
-	/** Name of PDF character sheet source file. */
-	static final String CHAR_SHEET_FILE = "OED-CharacterSheet.pdf";
-
 	//--------------------------------------------------------------------------
 	//  Inner Class
 	//--------------------------------------------------------------------------

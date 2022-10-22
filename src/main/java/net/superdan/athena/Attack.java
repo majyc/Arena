@@ -122,9 +122,5 @@ public class Attack {
         atk = new Attack("Claw", 2, 6, new Dice(1, 6));
         System.out.println(atk);
     }
-                + (name == null ? "Attack" : name) + " "
-                + Dice.formatBonus(bonus)
-                + " (" + damage + ")";
-    }
 }
 

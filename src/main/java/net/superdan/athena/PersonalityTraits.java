@@ -130,10 +130,10 @@ public class PersonalityTraits {
 	public static void main (String[] args) throws IOException {
 		Dice.initialize();
 		PersonalityTraits pt = new PersonalityTraits();
-		pt.printMultiTraits(Alignment.Lawful,  NUM_TRAITS);
-		pt.printMultiTraits(Alignment.Neutral, NUM_TRAITS);
-		pt.printMultiTraits(Alignment.Chaotic, NUM_TRAITS);
-		pt.printMultiTraits(null, NUM_TRAITS);
+		pt.printMultiTraits(Alignment.Lawful);
+		pt.printMultiTraits(Alignment.Neutral);
+		pt.printMultiTraits(Alignment.Chaotic);
+		pt.printMultiTraits(null);
 	}
 }
 
